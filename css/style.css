@@ -85,6 +85,10 @@ button:hover{
   #fromSelect,#toSelect{
     width:180px;
   }
+   #userEntryCourrency,#outputCourrency{
+    font-weight: 700;
+    width: 170px;
+  }
   input{
     border-radius: 10px;
   }

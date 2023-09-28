@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+  font-family: 'Kenia',sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background-color: lightgrey;
+}
+h1{
+    top: 100px;
+    font-size: 4rem;
+    color: green;
+  font-weight: 400;
+  padding: 20px;
+  
+}
+
+.container{
+    height: auto;
+    width: auto;
+    background: black ;
+   position: relative;
+   border-radius: 10px;
+   box-shadow: 0 12px 30px rgba(0,0,0,5);
+}
+#fromSelect,#toSelect{
+    width: 14em;
+    height: 3em;
+    margin-top: 20px;
+    font-size: 1rem;
+    background-color: cyan;
+    color: orangered;
+    font-weight: 600;
+    border-radius: 20px;
+}
+#alertMessages{
+    font-size: 3rem;
+    color: rgb(224, 7, 7);
+    margin-top: 10px;
+    margin-bottom: 15px ;
+}
+#userEntryCourrency,#outputCourrency{
+    width: 200px;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+input{border-radius: 15px;}
+#userEntryCourrency{font-weight: 900;}
+#outputCourrency{
+  color: purple;
+  font-weight: 900;
+}
+button{
+    background-color: black;
+    color: antiquewhite;
+  height: 40px;
+  width: 200px;
+  border-radius: 20px;
+  font-size: 25px;
+  font-weight: 900;
+  margin-bottom: 20px
+}
+button:hover{
+  letter-spacing: .35rem;
+  background-color: hsl(245,75%,52%);
+  box-shadow: 0 0px 20px hsl(245,75%,52%);
+}
+@media only screen and (max-width:440px){
+    .container{
+      width:100%;
+      box-shadow: 0 12px 15px rgba(0,0,0,.5);
+    }
+  .select{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #fromSelect,#toSelect{
+    width:180px;
+  }
+  input{
+    border-radius: 10px;
+  }
+  h1{
+    font-size: 2.8rem;
+  }
+}
